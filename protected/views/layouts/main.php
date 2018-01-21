@@ -20,7 +20,7 @@ $curent_company = AdminCentralStorage::get_central_setting(Yii::app()->user->nam
     <body>
         <div class="container" id="page">
             <div id="header">
-                <div id="logo">Welcome to <?php echo $curent_company; ?> CMS</div>
+                <div id="logo">Welcome to Ignition</div>
             </div>
             <div id="mainmenu">
                 <?php
@@ -47,20 +47,7 @@ $curent_company = AdminCentralStorage::get_central_setting(Yii::app()->user->nam
             <div class="clear"></div>
 
             <div id="footer">
-                Copyright &copy; <?php echo date('Y'); ?> by <?php
-                $current_company_full = '';
-
-                switch ($curent_company) {
-                    case 'expertpcx':
-                        $current_company_full = 'EXPERTPCX LTD';
-                        break;
-                    case 'hairacc4you':
-                        $current_company_full = 'IGNITION';
-                        break;
-                }
-
-                echo $current_company_full;
-                ?><br/>
+                Copyright &copy; <?php echo date('Y'); ?> by Ignition<br/>
                 All Rights Reserved.<br/>
                 <?php // echo Yii::powered();    ?>
             </div>
